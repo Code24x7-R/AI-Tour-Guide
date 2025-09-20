@@ -1,0 +1,8 @@
+{
+  "name": "AI Tour Guide",
+  "description": "An AI-powered tour guide that uses your camera to identify and provide comprehensive descriptions of artworks and monuments.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

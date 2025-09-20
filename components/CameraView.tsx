@@ -99,13 +99,13 @@ const CameraView: React.FC<CameraViewProps> = ({ onCapture }) => {
                 let message = "An unknown error occurred while getting your location.";
                 switch (error.code) {
                     case error.PERMISSION_DENIED:
-                        message = "You denied the request for Geolocation. Please enable location permissions in your browser settings.";
+                        message = "You denied the request for Geolocation. To find nearby suggestions, this app needs to know your location. Please go to your browser's settings and allow location access for this site.";
                         break;
                     case error.POSITION_UNAVAILABLE:
-                        message = "Location information is unavailable.";
+                        message = "Location information is unavailable. Please ensure your device's location service is turned on.";
                         break;
                     case error.TIMEOUT:
-                        message = "The request to get user location timed out.";
+                        message = "The request to get your location timed out. Please try again.";
                         break;
                 }
                 setSuggestionsError(message);
